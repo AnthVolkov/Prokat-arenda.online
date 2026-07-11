@@ -15,7 +15,6 @@ register_post_type('booking',[
 ]);
 
 }
-
 add_action('init','prokat_register_booking');
 
 function prokat_handle_booking(){
@@ -35,6 +34,14 @@ wp_insert_post([
 'equipment'=>$equipment
 ]
 ]);
+
+$message="Новая заявка Prokat-arenda.online\n\nИмя: $name\nТелефон: $phone\nОборудование: $equipment";
+
+wp_mail(
+get_option('admin_email'),
+'Новая заявка на аренду',
+$message
+);
 
 }
 
