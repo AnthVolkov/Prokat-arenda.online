@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo('charset'); ?>">
@@ -6,4 +6,13 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header><div class="container"><h1><?php bloginfo('name'); ?></h1></div></header>
+
+<header class="site-header">
+<div class="container">
+<a class="logo" href="<?php echo home_url(); ?>">Prokat-arenda.online</a>
+
+<nav class="main-menu">
+<?php wp_nav_menu(['theme_location'=>'main_menu']); ?>
+</nav>
+</div>
+</header>
