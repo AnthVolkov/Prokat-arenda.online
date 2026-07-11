@@ -1,12 +1,33 @@
 <?php get_header(); ?>
+
 <main>
+
 <section class="hero">
 <div class="container">
-<h1>Аренда строительного инструмента и оборудования</h1>
-<p>Надежная техника, честные цены и быстрая выдача.</p>
-<a href="#catalog">Перейти в каталог</a>
+<h1>Аренда инструмента и оборудования</h1>
+<p>Прокат техники для строительства, ремонта и бизнеса.</p>
+<a class="button" href="/equipment/">Выбрать оборудование</a>
 </div>
 </section>
-<section id="catalog"><div class="container"><h2>Популярные категории</h2><ul><li>Перфораторы</li><li>Бетономешалки</li><li>Генераторы</li><li>Лестницы</li></ul></div></section>
+
+<section class="container">
+<h2>Почему выбирают нас</h2>
+<div class="equipment-grid">
+<div class="equipment-card">
+<h3>⚙ Надёжная техника</h3>
+<p>Проверенное оборудование перед выдачей.</p>
+</div>
+<div class="equipment-card">
+<h3>🚚 Быстрая выдача</h3>
+<p>Оформление аренды без задержек.</p>
+</div>
+<div class="equipment-card">
+<h3>💰 Выгодные цены</h3>
+<p>Гибкие условия аренды.</p>
+</div>
+</div>
+</section>
+
 </main>
+
 <?php get_footer(); ?>
