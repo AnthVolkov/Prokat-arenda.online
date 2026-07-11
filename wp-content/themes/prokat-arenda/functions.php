@@ -21,6 +21,14 @@ function prokat_styles(){
         [],
         '1.0'
     );
+
+    wp_enqueue_script(
+        'prokat-main-js',
+        get_template_directory_uri().'/assets/js/main.js',
+        [],
+        '1.0',
+        true
+    );
 }
 add_action('wp_enqueue_scripts','prokat_styles');
 
