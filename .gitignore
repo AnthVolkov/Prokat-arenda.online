@@ -1,0 +1,5 @@
+# WordPress
+wordpress/wp-content/uploads/
+.env
+vendor/
+node_modules/
